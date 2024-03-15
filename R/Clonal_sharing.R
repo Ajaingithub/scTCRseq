@@ -1,8 +1,8 @@
 # In this object is the seurat object
 # savedir is the directory where you save
-# clus is the seurat clusters
-# TCR col is where the TCR are present
-# group for which you want to do clonal sharing like vaccine, condition etc
+# clus_col is the seurat clusters
+# TCR_col is where the TCR are present
+# group_col for which you want to do clonal sharing like vaccine, condition etc
 # group_val within that group_col which vaccine you want to extract like Z, S, or DMSO
 # split_col which column to split
 # column_name on splitting the column what will be the column name
