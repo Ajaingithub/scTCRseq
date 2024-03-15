@@ -46,6 +46,8 @@ where: D is the Simpson diversity index;  p_i is the proportion of individuals o
 
 **Code**
 
+**Shannon**
+
         source("./R/Shannon_Diversity.R")
         
         Shannon_AJ(object = CD8, 
@@ -58,6 +60,20 @@ where: D is the Simpson diversity index;  p_i is the proportion of individuals o
                    column_name = c("id","Ag","Age","Age_number","gender","Run"), 
                    total_clusters = length(cluster_num))
 
+**Simpson**
+
+        source("./R/Simpson_Diversity.R")
+        
+        Simpson_AJ(object = CD8, 
+                   savedir = savedir,
+                   clus_col = "seurat_clusters", 
+                   TCR_col = "CDR3",
+                   group_col = "orig.ident", 
+                   group_val = sample_id[i], 
+                   split_col = "orig.ident",
+                   column_name = c("id","Ag","Age","Age_number","gender","Run"), 
+                   total_clusters = length(cluster_num))
+                             
 
 
                    
