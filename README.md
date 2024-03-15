@@ -33,20 +33,8 @@ p_i is the proportion of individuals of species i in the community
 
 log_2 is the logarithm to base 2
 
-**Inverse Simpson Diversity**: The Simpson diversity index measures the probability that two individuals randomly selected from the community will be of the same species. A lower Simpson diversity index indicates a more diverse community, because it means that it is less likely that two individuals will be of the same species. The Simpson diversity index is calculated as follows:
-
-D = Σ p_i^2 ---> Simpson Index
-
-1-D = Gini-Simpson Index or Simpson diversity Index
-
-1/D = Inverse Simpson index
-
-where: D is the Simpson diversity index;  p_i is the proportion of individuals of species i in the community
-
 
 **Code**
-
-**Shannon**
 
         source("./R/Shannon_Diversity.R")
         
@@ -60,7 +48,17 @@ where: D is the Simpson diversity index;  p_i is the proportion of individuals o
                    column_name = c("id","Ag","Age","Age_number","gender","Run"), 
                    total_clusters = length(cluster_num))
 
-**Simpson**
+**Inverse Simpson Diversity**: The Simpson diversity index measures the probability that two individuals randomly selected from the community will be of the same species. A lower Simpson diversity index indicates a more diverse community, because it means that it is less likely that two individuals will be of the same species. The Simpson diversity index is calculated as follows:
+
+D = Σ p_i^2 ---> Simpson Index
+
+1-D = Gini-Simpson Index or Simpson diversity Index
+
+1/D = Inverse Simpson index
+
+where: D is the Simpson diversity index;  p_i is the proportion of individuals of species i in the community
+
+**Code**
 
         source("./R/Simpson_Diversity.R")
         
