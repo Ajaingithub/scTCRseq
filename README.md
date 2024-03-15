@@ -78,11 +78,23 @@ This method calculates the Gini coefficient (G) of inequality with bootstrap con
 
 ![Screenshot 2024-03-15 at 4 44 35 PM](https://github.com/Ajaingithub/scTCRseq/assets/37553954/289fa13b-e792-4b07-a671-23531f877df2)
 
+where x is an observed value, n is the number of values observed and i is the rank of values in ascending order.
+
+        source("./R/Gini_coefficient_index.R")
+        
+        Gini_coef_AJ(object = CD8, 
+                     savedir = savedir, 
+                     clus_col = "seurat_clusters", 
+                     TCR_col = "TRA1_or_TRA2_TRB1_no_TRB2",
+                     group_col = "orig.ident", 
+                     group_val = sample_id[i], 
+                     split_col = "orig.ident",
+                     column_name = c("id","Ag","Age","Age_number","gender","Run"), 
+                     total_clusters = cluster_name)
 
 
 
-
-
+These would calculate the Clonal Sharing, Shannon Diversity, Simpson Diversity and Gini Clonality Index
 
 
 
