@@ -1,11 +1,12 @@
 # scTCRseq
-TCR Downstream analysis clonal sharing, diversity, and clonality
+TCR Downstream analysis clonal sharing, diversity, and clonality.
+
+The argument information is written in the R funtion
 
 ## Clonal Sharing: 
 To identify sharing between different clusters, celltypes for different samples
 
 To Run the code
-
         
         source("/research/labs/immunology/goronzy_weyand/GoronzyLab_Mayo/Abhinav/Resources/scTCRseq/VZV_clonal_sharing.R")
         
@@ -18,4 +19,5 @@ To Run the code
                    split_col = "orig.ident",
                    column_name = c("id","Ag","Age","Age_number","gender","Run"))
 
+## 
                    
