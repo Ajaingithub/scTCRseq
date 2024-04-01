@@ -6,6 +6,8 @@ The argument information is written in the R funtion
 ### Clonal Sharing: 
 Clone sharing between different clusters, celltypes for different samples using TCR Receptor Similarity Score or Bhattacharya Coefficient
 
+![Screenshot 2024-04-01 at 5 50 17 PM](https://github.com/Ajaingithub/scTCRseq/assets/37553954/87477afd-8631-491e-99b8-81db9e948ef2) 
+
 **Code**
         
         source("./R/VZV_clonal_sharing.R")
