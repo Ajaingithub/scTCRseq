@@ -18,6 +18,8 @@ Clone sharing between different clusters, celltypes for different samples using 
                    group_val = "O_EBNA1", 
                    split_col = "orig.ident",
                    column_name = c("id","Ag","Age","Age_number","gender","Run"))
+                   
+![Screenshot 2024-04-01 at 5 47 03 PM](https://github.com/Ajaingithub/scTCRseq/assets/37553954/ef35dbe2-5046-4212-8113-f2d8f532b0a8)
 
 ### Clonal Diversity
 Clonal diversity between individuals within the clusters or celltypes using Shannon or Simpson diversity index
@@ -47,6 +49,8 @@ log_2 is the logarithm to base 2
                    split_col = "orig.ident",
                    column_name = c("id","Ag","Age","Age_number","gender","Run"), 
                    total_clusters = length(cluster_num))
+                   
+![Screenshot 2024-04-01 at 5 48 22 PM](https://github.com/Ajaingithub/scTCRseq/assets/37553954/d662a969-81ac-4025-8372-2208e6aabc62)
 
 **Inverse Simpson Diversity**: The Simpson diversity index measures the probability that two individuals randomly selected from the community will be of the same species. A lower Simpson diversity index indicates a more diverse community, because it means that it is less likely that two individuals will be of the same species. The Simpson diversity index is calculated as follows:
 
@@ -71,6 +75,8 @@ where: D is the Simpson diversity index;  p_i is the proportion of individuals o
                    split_col = "orig.ident",
                    column_name = c("id","Ag","Age","Age_number","gender","Run"), 
                    total_clusters = length(cluster_num))
+                   
+![Screenshot 2024-04-01 at 5 47 52 PM](https://github.com/Ajaingithub/scTCRseq/assets/37553954/615bebbe-713a-4a3e-bf51-cb3c1b9bd205)
 
                    
 ### Gini Clonality Index: 
@@ -92,6 +98,7 @@ where x is an observed value, n is the number of values observed and i is the ra
                      column_name = c("id","Ag","Age","Age_number","gender","Run"), 
                      total_clusters = cluster_name)
 
+![Screenshot 2024-04-01 at 5 48 58 PM](https://github.com/Ajaingithub/scTCRseq/assets/37553954/003050f2-60d1-45a3-8243-625acbabb6b9)
 
 
 These would calculate the Clonal Sharing, Shannon Diversity, Simpson Diversity and Gini Clonality Index
