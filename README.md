@@ -9,6 +9,7 @@ Clone sharing between different clusters, celltypes for different samples using 
 ![Screenshot 2024-04-01 at 5 50 17 PM](https://github.com/Ajaingithub/scTCRseq/assets/37553954/87477afd-8631-491e-99b8-81db9e948ef2) 
 
 where 𝑝𝑖𝑘 and 𝑝𝑗𝑘 are the proportions of cells in group i and j that belongs to clonotype k, with a total of C clonotypes. This coefficient is between 0 and 1, and larger value indicates higher similarity in clonotype distributions.
+
 **Code**
         
         source("./R/VZV_clonal_sharing.R")
