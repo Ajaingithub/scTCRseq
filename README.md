@@ -3,7 +3,7 @@ TCR Downstream analysis clonal sharing, diversity, and clonality.
 
 The argument information is written in the R funtion
 
-### Clonal Sharing: 
+## Clonal Sharing: 
 Clone sharing between different clusters, celltypes for different samples using TCR Receptor Similarity Score or Bhattacharya Coefficient
 
 ![Screenshot 2024-04-01 at 5 50 17 PM](https://github.com/Ajaingithub/scTCRseq/assets/37553954/87477afd-8631-491e-99b8-81db9e948ef2) 
@@ -25,7 +25,7 @@ where 𝑝𝑖𝑘 and 𝑝𝑗𝑘 are the proportions of cells in group i and 
                    
 ![Screenshot 2024-04-01 at 5 47 03 PM](https://github.com/Ajaingithub/scTCRseq/assets/37553954/ef35dbe2-5046-4212-8113-f2d8f532b0a8)
 
-### Clonal Diversity
+## Clonal Diversity
 Clonal diversity between individuals within the clusters or celltypes using Shannon or Simpson diversity index
 
 **Shannon Diveristy**: The Shannon diversity index measures the uncertainty of the probability distribution of species abundance. A higher Shannon diversity index indicates a more diverse community, because it means that there is more uncertainty about which species will be encountered. The Shannon diversity index is calculated as follows:
@@ -83,7 +83,7 @@ where: D is the Simpson diversity index;  p_i is the proportion of individuals o
 ![Screenshot 2024-04-01 at 5 47 52 PM](https://github.com/Ajaingithub/scTCRseq/assets/37553954/615bebbe-713a-4a3e-bf51-cb3c1b9bd205)
 
                    
-### Gini Clonality Index: 
+## Gini Clonality Index: 
 This method calculates the Gini coefficient (G) of inequality with bootstrap confidence intervals. A Lorenz plot is produced when a single variable is specified for analysis, otherwise the summary statistics alone are displayed for a group of variables.
 
 ![Screenshot 2024-03-15 at 4 44 35 PM](https://github.com/Ajaingithub/scTCRseq/assets/37553954/289fa13b-e792-4b07-a671-23531f877df2)
